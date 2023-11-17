@@ -149,7 +149,7 @@ univariant_plot = px.histogram(data['OUTAGE.DURATION'])
 univariant_plot.update_layout(xaxis_title = 'OUTAGE.DURATION in minutes', showlegend = False, title = 'Count of Duration of Outage')
 ```
 
-<iframe src="static/uni-plot.html" width=800 height=600 frameBorder=0></iframe>
+<!-- <iframe src="static/uni-plot.html" width=800 height=600 frameBorder=0></iframe> -->
 
 
 ### Bivariant Graph
@@ -161,7 +161,7 @@ bivariant = data.groupby('U.S._STATE')['OUTAGE.DURATION'].sum().sort_values().re
 
 ```
 
-<iframe src="static/bi-plot.html" width=800 height=600 frameBorder=0></iframe>
+<!-- <iframe src="static/bi-plot.html" width=800 height=600 frameBorder=0></iframe> -->
 
 
 ### Interesting Aggregate
@@ -255,7 +255,7 @@ We wrote a function called `mar_permutation` that executes the permutation test 
 We found that the p_value/alpha given was 0, meaning that we would reject the null and say that the missingess of the data "Customers Affected" is MAR with respect to the US States. 
 
 
-<iframe src="static/mar-hist.html" width=800 height=600 frameBorder=0></iframe>
+<!-- <iframe src="static/mar-hist.html" width=800 height=600 frameBorder=0></iframe> -->
 
 
 ## Hypothesis Testing
@@ -372,7 +372,7 @@ graph_df = resulting_df[(resulting_df['duration_p_value'] < 0.05) | (resulting_d
 
 
 
-<iframe src="static/p_value_bar.html" width=800 height=600 frameBorder=0></iframe>
+<!-- <iframe src="static/p_value_bar.html" width=800 height=600 frameBorder=0></iframe> -->
 
 
 
